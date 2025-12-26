@@ -1,36 +1,18 @@
-### IntelliJ ###
+# Gradle
+.gradle/
+build/
+ECHO°¡ ¼³Á¤µÇ¾î ÀÖ½À´Ï´Ù.
+# IntelliJ
 .idea/
 *.iml
 out/
-
-### Gradle ###
-.gradle/
-build/
-!gradle/wrapper/gradle-wrapper.jar
-
-### Spring Boot ###
-/target/
-/bin/
-
-### Logs ###
-*.log
-logs/
-
-### Kotlin / Java ###
-*.class
-*.jar
-*.war
-*.ear
-
-### OS Files ###
+ECHO°¡ ¼³Á¤µÇ¾î ÀÖ½À´Ï´Ù.
+# OS
 .DS_Store
 Thumbs.db
-
-### Environment / Secret keys (ì¤‘ìš”!) ###
+ECHO°¡ ¼³Á¤µÇ¾î ÀÖ½À´Ï´Ù.
+# Logs
+*.log
+ECHO°¡ ¼³Á¤µÇ¾î ÀÖ½À´Ï´Ù.
+# Env
 .env
-*.pem
-*.ppk
-*.key
-
-### ê¸°íƒ€ ###
-*.out

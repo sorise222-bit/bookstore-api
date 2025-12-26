@@ -1,0 +1,17 @@
+SET @col_exists := (
+  SELECT COUNT(*)
+  FROM INFORMATION_SCHEMA.COLUMNS
+  WHERE TABLE_SCHEMA = DATABASE()
+    AND TABLE_NAME = 'book'
+    AND COLUMN_NAME = 'stock'
+);
+
+SET @sql := IF(
+  @col_exists = 0,
+  'ALTER TABLE book ADD COLUMN stock INT NOT NULL DEFAULT 0',
+  'SELECT 1'
+);
+
+PREPARE stmt FROM @sql;
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
